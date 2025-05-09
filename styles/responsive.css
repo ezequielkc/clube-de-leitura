@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  /* ========== GLOBAL ========== */
+  html {
+    font-size: 87.5%; /* Reduz o tamanho base da fonte para melhor legibilidade em telas menores */
+  }
+
+  body {
+    background-color: var(--shape-background);
+    margin: 1.25rem 1.25rem 2.375rem;
+    box-sizing: border-box;
+  }
+
+  /* ========== LOGO ========== */
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+}

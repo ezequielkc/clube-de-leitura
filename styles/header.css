@@ -1,0 +1,17 @@
+.nav-header {
+  display: flex; /* coloca os elementos filhos lado a lado (layout horizontal) */
+  justify-content: space-between; /* empurra os elementos para as extremidades do container */
+  align-items: center; /* alinha verticalmente os itens ao centro do container */
+}
+
+.btn-assinar {
+  background-color: var(--pink-dark); /* define a cor de fundo do botão */
+  color: var(--text-title); /* define a cor do texto do botão */
+  text-decoration: none; /* remove o sublinhado padrão de links */
+  padding: 0.75rem 1.25rem; /* define o espaçamento interno: 12px vertical, 20px horizontal */
+  border: 2px solid var(--primary-color); /* define uma borda de 2px com a cor primária */
+  border-radius: 8px; /* arredonda os cantos da borda com raio de 8px */
+  font: 600 var(--text-sm)/1.5 var(--font-family); 
+  cursor: pointer; /* muda o cursor para ponteiro ao passar por cima */
+  display: inline-block; /* garante que o botão respeite padding e largura como bloco, sem quebrar linha automaticamente */
+}

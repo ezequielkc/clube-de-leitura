@@ -1,0 +1,3 @@
+@import url(global.css);       /* estilos base e variáveis */
+@import url(header.css);       /* estilos específicos de componentes */
+@import url(responsive.css);   /* sobrescrições para telas menores */
