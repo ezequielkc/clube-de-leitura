@@ -1,59 +1,75 @@
-/* ========== HERO SECTION ========== */
-.hero {
-  position: relative; 
-  /* Permite que elementos posicionados dentro da .hero usem ela como referência.
-     Também mantém a hero no fluxo normal do layout (diferente de absolute). */
-  margin-top: -3.5rem;
-  /* Remove a margem superior do body para que a hero encoste no topo da tela. */
-  margin-left: -10rem;
-  margin-right: -10rem;
-  /* Anula as margens laterais do body (10rem cada) para expandir a hero além dos limites do conteúdo. */
-  width: calc(100% + 20rem);
-  /* Soma 20rem à largura total (10rem de cada lado) para compensar as margens removidas
-     e fazer com que a hero ocupe toda a largura visível do navegador. */
-  height: 100vh;
-  /* Define que a hero deve ter 100% da altura da viewport (tela visível do navegador). */
-  background-image: url('/assets/hero-background.png');
-  /* Aplica a imagem de fundo na hero. */
-  background-size: cover;
-  /* Faz a imagem ocupar toda a área da hero sem distorcer, cortando se necessário. */
-  background-position: center;
-  /* Erro: 'cover' não é um valor válido para background-position.
-     CORRETO seria: background-position: center;
-     Isso centraliza a imagem no container. */
+#hero {
+  animation: opacity 5s ease forwards;
+  background-image: url(../assets/backgrounds/hero-background.png);
   background-repeat: no-repeat;
-  /* Impede que a imagem se repita caso o tamanho não preencha a área. */
+  background-size: cover;
+  background-position: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 59.25rem;
+  max-width: 110rem;
+  margin-inline: auto;
   text-align: center;
-  /* Centraliza vertical e horizontalmente o conteúdo dentro da hero. */
 
-  z-index: 0;
-  /* Garante que a hero fique abaixo de elementos como o header (que tem z-index maior). */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* início da hero */
+  & nav {
+    padding: 3.5rem 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      background-image: url(../assets/icons/logo-horizontal.svg);
+      max-width: 14.375rem;
+      width: 100%;
+      height: 3.5rem;
+    }
+  }
+
+  & .title {
+    max-width: 41rem;
+    margin-top: 10.25rem;
+    margin-inline: auto;
+
+    & p {
+      margin-top: 2rem;
+    }
+  }
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
 
-.hero-content {
-  color: var(--text-title);
-  max-width: 800px;
-  padding: 2rem;
-  margin-top: 17.375rem;
-  max-width: 656px;
-  padding: 0 2rem;
-  text-align: center;
+  100% {
+    opacity: 1;
+  }
 }
 
-.h1-hero {
-  font: 700 var(--text-lg)/1.2 var(--font-family); /* peso 700, tamanho 4rem, altura de linha 1.2, fonte Raleway */
-  color: var(--text-title); /* cor definida corretamente separada */
+@media (width <=48em) {
+  #hero {
+    max-width: 23.4375rem;
+    height: 29rem;
+    width: 100%;
+    align-items: center;
+    padding: 1.25rem 1.25rem 0;
+
+    & nav {
+      padding: 0;
+
+      & span {
+        background: url(../assets/icons/logo-symbol.svg);
+        max-width: 4rem;
+        max-height: 3rem;
+        background-size: 100% 100%;
+      }
+    }
+
+    & .title {
+      margin-top: 3rem;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
 }
-
-
-
-
-

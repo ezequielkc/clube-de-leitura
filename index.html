@@ -1,37 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encantos literários</title>
+    <link rel="shortcut icon" href="assets/icons/logo-symbol.svg" type="image/x-icon">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clube de Leitura</title>
-  <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-</head>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="hero">
+      <nav>
+        <span></span>
 
-<body>
-  <header class="nav-header">
-    <a href="#">
-      <img src="/assets/logo/logo-desktop.svg" alt="Logo Desktop" class="logo-desktop">
-      <img src="/assets/logo/logo-mobile.svg" alt="Logo Mobile" class="logo-mobile">
-    </a>     
-    <a href="#download" class="btn-assinar">Assinar</a>
-  </header>
+        <a href="" class="btn btn-primary">Assinar</a>
+      </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="h1-hero">Desperte a sua imaginação e explore novos mundos</h1>
-      <p class="p-content">Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página </p>
+      <div class="title">
+        <h1>Desperte a sua imaginação e explore novos mundos</h1>
+        <p>
+          Junte-se ao clube de assinatura Encantos Literários<br />
+          e descubra maravilhas e aventuras a cada página
+        </p>
+      </div>
+    </section>
+
+    <section id="desktop-perks">
+      <div class="desktop-only">
+        <span class="img-book"></span>
+        <p>
+          Receba todo mês um <strong>livro surpresa</strong> do seu tema
+          favorito, acompanhado de <strong> brindes exclusivos </strong> que
+          tornarão a sua experiência literária <strong>encantadora</strong>.
+        </p>
+        <span class="img-crystal-ball"></span>
+        <span class="img-ouija"></span>
+      </div>
+    </section>
+
+    <section id="mobile-perks">
+      <div>
+        <span class="img-book"></span>
+        <p>
+          Receba todo mês um livro surpresa do seu tema favorito, acompanhado de
+          brindes exclusivos que tornarão a sua experiência literária ainda mais
+          encantadora.
+        </p>
+        <span class="img-crystal-ball"></span>
+        <span class="img-ouija"></span>
+      </div>
+    </section>
+
+    <div id="kit-monthly">
+      <header>
+        <div class="group-header">
+          <img src="assets/icons/star.svg" alt="" />
+          <h2>Conheça o kit mensal</h2>
+          <img src="assets/icons/star.svg" alt="" />
+        </div>
+        <p>Recebe uma caixa surpresa todos os meses</p>
+      </header>
+
+      <div class="kit-content">
+        <img src="assets/icons/book.svg" alt="" />
+        <img src="assets/icons/bookmark-yellow.svg" alt="" />
+        <img src="assets/icons/bookmark-purple.svg" alt="" />
+        <img src="assets/icons/pin.svg" alt="" />
+
+        <img src="assets/icons/arrow.svg" alt="" />
+        <img src="assets/icons/arrow-bookmark.svg" alt="" />
+        <img src="assets/icons/arrow-exclusive.svg" alt="" />
+
+        <p>Livro em capa dura</p>
+        <p>Marca páginas temático</p>
+        <p>Broche exclusivo</p>
+      </div>
     </div>
-  </section>
-  
-</body>
 
+    <section id="pricing-container">
+      <h2>
+        Assinatura <br />
+        Encantos Literários
+      </h2>
+
+      <div class="pricing">
+        <div class="card">
+          <header>
+            <div>
+              <span>Mensal</span>
+            </div>
+            <lp-pricing>R$ 59,90<small>/mês</small></lp-pricing>
+            <p class="description-price">R$ 718,80 por ano</p>
+          </header>
+
+          <div class="details">
+            <ul role="list">
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Kit mensal com livro temático</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-secondary">
+              Assinar mensal
+            </button>
+          </div>
+        </div>
+
+        <div class="card semestral">
+          <img src="assets/Bunny.png" alt="" />
+          <header>
+            <div>
+              <span>Semestral</span>
+            </div>
+            <lp-pricing>R$ 52,90<small>/mês</small></lp-pricing>
+            <p class="description-price">R$ 634,80 por ano</p>
+          </header>
+
+          <div class="details">
+            <ul role="list">
+              <li>
+                <img src="assets/icons/purple-star.svg" alt="" />
+                <p>Kit mensal com livro temático</p>
+              </li>
+              <li>
+                <img src="assets/icons/purple-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+              <li>
+                <img src="assets/icons/purple-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+              <li>
+                <img src="assets/icons/purple-star.svg" alt="" />
+                <p>Membro premium do clube</p>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary">
+              Assinar semestral
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <header>
+            <div>
+              <span>Anual</span>
+            </div>
+            <lp-pricing>R$ 48,90<small>/mês</small></lp-pricing>
+            <p class="description-price">R$ 586,80 por ano</p>
+          </header>
+
+          <div class="details">
+            <ul role="list">
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Kit mensal com livro temático</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Broche e marca páginas exclusivo</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Membro premium do clube</p>
+              </li>
+              <li>
+                <img src="assets/icons/blue-star.svg" alt="" />
+                <p>Planner anual de leituras</p>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-secondary">
+              Assinar mensal
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="brand">
+        <div class="logo">
+          <img src="assets/icons/logo-horizontal.svg" alt="" />
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="social-links">
+          <a href="#" class="social" aria-label="instagram"></a>
+          <a href="#" class="social" aria-label="twitter"></a>
+          <a href="#" class="social" aria-label="facebook"></a>
+          <a href="#" class="social" aria-label="discord"></a>
+          <a href="#" class="social" aria-label="email"></a>
+        </div>
+      </div>
+
+      <div class="links">
+        <ul role="list">
+          <li class="title">Conteúdos</li>
+          <li>Kits passados</li>
+          <li>Clube de membros</li>
+          <li>Blog</li>
+        </ul>
+
+        <ul role="list">
+          <li class="title">Ajuda</li>
+          <li>Central de ajuda</li>
+          <li>Regulamentos</li>
+          <li>Suporte</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
