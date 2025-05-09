@@ -4,7 +4,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Garante que paddings e bordas não expandam o tamanho dos elementos */
+  box-sizing: border-box;
 }
 
 /* ========== VARIÁVEIS GLOBAIS ========== */
@@ -47,14 +47,5 @@
 body {
   background-color: var(--shape-background);
   margin: 3.5rem 10rem 6.375rem;
-  box-sizing: border-box;
-}
-
-/* ========== LOGO ========== */
-.logo-desktop {
-  display: block;
-}
-
-.logo-mobile {
-  display: none;
+  position: relative;
 }

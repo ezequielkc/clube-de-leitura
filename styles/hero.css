@@ -1,0 +1,59 @@
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative; 
+  /* Permite que elementos posicionados dentro da .hero usem ela como referência.
+     Também mantém a hero no fluxo normal do layout (diferente de absolute). */
+  margin-top: -3.5rem;
+  /* Remove a margem superior do body para que a hero encoste no topo da tela. */
+  margin-left: -10rem;
+  margin-right: -10rem;
+  /* Anula as margens laterais do body (10rem cada) para expandir a hero além dos limites do conteúdo. */
+  width: calc(100% + 20rem);
+  /* Soma 20rem à largura total (10rem de cada lado) para compensar as margens removidas
+     e fazer com que a hero ocupe toda a largura visível do navegador. */
+  height: 100vh;
+  /* Define que a hero deve ter 100% da altura da viewport (tela visível do navegador). */
+  background-image: url('/assets/hero-background.png');
+  /* Aplica a imagem de fundo na hero. */
+  background-size: cover;
+  /* Faz a imagem ocupar toda a área da hero sem distorcer, cortando se necessário. */
+  background-position: center;
+  /* Erro: 'cover' não é um valor válido para background-position.
+     CORRETO seria: background-position: center;
+     Isso centraliza a imagem no container. */
+  background-repeat: no-repeat;
+  /* Impede que a imagem se repita caso o tamanho não preencha a área. */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Centraliza vertical e horizontalmente o conteúdo dentro da hero. */
+
+  z-index: 0;
+  /* Garante que a hero fique abaixo de elementos como o header (que tem z-index maior). */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* início da hero */
+}
+
+
+.hero-content {
+  color: var(--text-title);
+  max-width: 800px;
+  padding: 2rem;
+  margin-top: 17.375rem;
+  max-width: 656px;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.h1-hero {
+  font: 700 var(--text-lg)/1.2 var(--font-family); /* peso 700, tamanho 4rem, altura de linha 1.2, fonte Raleway */
+  color: var(--text-title); /* cor definida corretamente separada */
+}
+
+
+
+
+

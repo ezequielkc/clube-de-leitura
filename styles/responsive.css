@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   /* ========== GLOBAL ========== */
   html {
-    font-size: 87.5%; /* Reduz o tamanho base da fonte para melhor legibilidade em telas menores */
+    font-size: 87.5%;
   }
 
   body {
@@ -17,5 +17,20 @@
 
   .logo-mobile {
     display: block;
+  }
+
+  /* ========== HERO ========== */
+  .hero {
+    margin-top: -1.25rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    width: calc(100% + 2.5rem);
+    height: 100vh;
+    background-position: center -30px;
+  }
+
+  .hero-content {
+    margin-top: 12rem; /* 116px do topo */
+    padding: 0 1.25rem;  /*  20px nas laterais */
   }
 }
